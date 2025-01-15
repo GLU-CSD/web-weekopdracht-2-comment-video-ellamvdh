@@ -52,7 +52,7 @@ class Reactions
             prettyDump( mysqli_error($con) );
         } else{
             $grqry->bind_result($id,$name,$email);
-            $grqry->store_result();
+            //$grqry->store_result();
             if($grqry->execute()){
                 while($grqry->fetch()){
                     $array[] = [
